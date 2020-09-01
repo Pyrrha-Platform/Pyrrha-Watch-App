@@ -6,8 +6,8 @@ This repository contains the [Prometeo](https://github.com/Code-and-Response/Pro
 
 ## Setting up the solution
 
-* Install Android Studio
-* Add Samsung SDKs for the device and the watch
+* Install Tizen Studio
+* Add Samsung SDKs for the watch ([Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/))
 
 ## Contributing
 
