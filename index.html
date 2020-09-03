@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<title>Basic</title>
+		<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+		<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+		<!-- load theme file for your application -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="ui-page ui-page-active" id="main">
+			<header class="ui-header" id="title">
+				<img src="img/prometeo-header.png">
+			</header>
+			<div class="ui-content ui-content-padding" id="home-content"><a href="#details" id="home-clock">00:00</a></div>
+		</div>
+		<div class="ui-page" id="details">
+			<header class="ui-header" id="title">
+				<img src="img/prometeo-header.png">
+			</header>
+			<div class="ui-content ui-content-padding" id="device-not-found">
+				<span id="device-message">Device not found</span>
+			</div>
+			<div class="ui-content ui-content-padding" id="device-details">
+				<span id="device-details"><a href="#details" id="device-clock">00:00</a></span>
+				<table>
+					<tr>
+						<td class="key">CO</td>
+						<td class="value" id="co"></td>
+					</tr>
+					<tr>
+						<td class="key">NO<sub>2</sub></td>
+						<td class="value" id="no2"></td>
+					</tr>
+					<tr>
+						<td class="key">Temp</td>
+						<td class="value" id="tmp"></td>
+					</tr>
+					<tr>
+						<td class="key">Humidity</td>
+						<td class="value" id="hum"></td>
+					</tr>
+				</table>
+			</div>	
+		</div>
+		<script src="lib/tau/wearable/js/tau.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/lowBatteryCheck.js"></script>
+		<script src="js/circle-helper.js"></script>
+		<script src="js/functions.js"></script>
+	</body>
+</html>
