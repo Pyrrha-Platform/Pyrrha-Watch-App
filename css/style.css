@@ -1,0 +1,67 @@
+div#main, div#details {
+	background-image: url("../img/fondo_corto.png");
+}
+
+div#device-not-found {
+	display: none;
+}
+
+h2#title {
+	color: #333;
+}
+
+a#home-clock {
+	font-size: 200%;
+	color: #fff;
+}
+
+a#device-clock {
+	color: #fff;
+}
+
+div#device-message, div#device-details, td {
+	color: #fff;
+	text-align: center;
+}
+
+td.key {
+	text-align: right;
+}
+
+td.value {
+	text-align: left;
+}
+
+table, td {
+	/* border: 1px solid #000; */
+	padding: 0 2% 0 2%;
+	font-size: 80%
+}
+
+table {
+	width: 100%;
+}
+
+td.key, t.value {
+	width: 50%
+}
+
+td.color, td.color-green, td.color-yellow, td.color-red {
+	width: 10%
+}
+
+td.color-green {
+	background-color: green;
+}
+
+td.color-yellow {
+	background-color: yellow;
+}
+
+td.color-red {
+	background-color: red;
+}
+
+div#home-content {
+	padding-top: 20%;
+}

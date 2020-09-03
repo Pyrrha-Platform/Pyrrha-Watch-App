@@ -6,7 +6,16 @@ This repository contains the [Prometeo](https://github.com/Code-and-Response/Pro
 
 ## Mockup
 
-![Prometeo watch app mockup](images/prometeo-watch-mockups.jpg)
+![Prometeo watch app mockup](img/prometeo-watch-mockups.jpg)
+
+## Features
+
+The watch includes a limited subset of the features proposed in the mockup. It includes:
+
+1. Basic home page
+2. On tap, it displays the status of the current sensors
+
+The smartphone is responsible for pairing with the watch and the Prometeo device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
 
 ## Setting up the solution
 
