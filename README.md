@@ -17,6 +17,11 @@ The watch includes a limited subset of the features proposed in the mockup. It i
 
 The smartphone is responsible for pairing with the watch and the Prometeo device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
 
+- [x] Basic landing page
+- [x] Sensors page
+- [ ] [Bluetooth connectivity to smartphone](https://docs.tizen.org/application/web/guides/connectivity/bluetooth/)
+- [ ] [Vibrations if any sensor has been red for 5 seconds](https://docs.tizen.org/application/web/guides/notification/notification/#creating-simple-notifications)
+
 ## Setting up the solution
 
 * Install Tizen Studio
