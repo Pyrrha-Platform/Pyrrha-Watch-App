@@ -24,16 +24,43 @@
 (function () {
 	"use strict";
 	
+	function sendNotification(message) {
+		var appControl = new tizen.ApplicationControl('http://tizen.org/appcontrol/operation/create_content', null, 'image/png', null, null);
+
+		var notificationGroupDict = {
+		    /* Notification content */
+		    content: message,
+		    images: {
+		        /* Path to the notification icon */
+		        iconPath: '../icon.png'
+		    },
+		    actions: {
+		        /* Device vibrates when the notification is displayed */
+		        vibration: true,
+		        /* Application control to be launched when the user selects the notification */
+		        appControl: appControl
+		    }
+		};
+		
+		var notification = new tizen.UserNotification('SIMPLE', 'Exposure alert', notificationGroupDict);
+		
+		tizen.notification.post(notification);
+	}
+	
 	function setSensorValues() {
-		var co = [15, 20, 25];
-		var no2 = [0.05, 0.15, 0.15];
-		var tmp = [30, 31, 32];
-		var hum = [82, 85, 87];
+		var co = [15, 20, 25, 30, 35, 40];
+		var no2 = [0.05, 0.10, 0.15, 0.20, 0.25];
+		var tmp = [30, 31, 32, 33, 34, 35];
+		var hum = [82, 83, 85, 87, 89];
 		
 		document.getElementById('co').innerText = co[Math.floor(Math.random() * co.length)] + 'ppm';
 		document.getElementById('no2').innerText = no2[Math.floor(Math.random() * no2.length)] + 'ppm';
 		document.getElementById('tmp').innerHTML = tmp[Math.floor(Math.random() * tmp.length)] + '&#8451;';
 		document.getElementById('hum').innerText = hum[Math.floor(Math.random() * hum.length)] + '%';
+		
+		if (document.getElementById('co').innerText == '40ppm') {
+			sendNotification('Your carbon monoxide exposure is too great.')
+		}
 		
 		window.setTimeout(setSensorValues, 1000);
 	}
