@@ -2,44 +2,51 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width,user-scalable=no">
-		<title>Basic</title>
+		<title>Prometeo</title>
 		<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
 		<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
 		<!-- load theme file for your application -->
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<div class="ui-page ui-page-active" id="main">
-			<header class="ui-header" id="title">
-				<img src="img/prometeo-header.png">
-			</header>
-			<div class="ui-content ui-content-padding" id="home-content"><a href="#details" id="home-clock">00:00</a></div>
-		</div>
 		<div class="ui-page" id="details">
-			<header class="ui-header" id="title">
-				<img src="img/prometeo-header.png">
-			</header>
+			<!--  
 			<div class="ui-content ui-content-padding" id="device-not-found">
 				<span id="device-message">Device not found</span>
 			</div>
+			-->
 			<div class="ui-content ui-content-padding" id="device-details">
 				<span id="device-details"><a href="#details" id="device-clock">00:00</a></span>
 				<table>
 					<tr>
 						<td class="key">CO</td>
-						<td class="value" id="co"></td>
+						<td class="value"><span id="co" class="reading"></span> ppm</td>
 					</tr>
 					<tr>
 						<td class="key">NO<sub>2</sub></td>
-						<td class="value" id="no2"></td>
+						<td class="value"><span id="no2" class="reading"></span> ppm</td>
+					</tr>
+					<!-- 
+					<tr>
+						<td class="key">Benzene</td>
+						<td class="value"><span id="bz" class="reading"></span> ppm</td>
 					</tr>
 					<tr>
-						<td class="key">Temp</td>
-						<td class="value" id="tmp"></td>
+						<td class="key">Formaldehyde</td>
+						<td class="value"><span id="fd" class="reading"></span> ppm</td>
+					</tr>
+					<tr>
+						<td class="key">Acrolein</td>
+						<td class="value"><span id="ac" class="reading"></span> ppm</td>
+					</tr>
+					-->
+					<tr>
+						<td class="key">Temperature</td>
+						<td class="value"><span id="tmp" class="reading"></span> &#8451; </td>
 					</tr>
 					<tr>
 						<td class="key">Humidity</td>
-						<td class="value" id="hum"></td>
+						<td class="value"><span id="hum" class="reading"></span> %</td>
 					</tr>
 				</table>
 			</div>	
