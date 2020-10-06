@@ -14,10 +14,10 @@ This repository contains the [Prometeo](https://github.com/Code-and-Response/Pro
 
 ## Features
 
-The watch includes a limited subset of the features proposed in the mockup. It includes:
+The watch includes a limited subset of the features proposed in the [original mockup](#original-mockup). It includes:
 
-1. Basic home page
-2. On tap, it displays the status of the current sensors
+1. Basic home page with time and 4 readings shared from the device via the mobile app
+2. Battery life is not yet shown, as this is not available from the device
 
 The smartphone is responsible for pairing with the watch and the Prometeo device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
 
@@ -31,7 +31,7 @@ The smartphone is responsible for pairing with the watch and the Prometeo device
 * Install Tizen Studio
 * Add Samsung SDKs for the watch ([Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/))
 
-## Old mockup
+## Original mockup
 
 ![Prometeo watch app mockup](img/prometeo-watch-mockups.jpg)
 
