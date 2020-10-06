@@ -13,7 +13,7 @@
 		hours = hours < 10 ? '0' + hours : hours;
 		time = hours + ':' + minutes;
 		
-		document.getElementById('home-clock').innerText = time;
+		// document.getElementById('home-clock').innerText = time;
 		document.getElementById('device-clock').innerText = time;
 		
 		window.setTimeout(setTime, 1000);
@@ -53,12 +53,12 @@
 		var tmp = [30, 31, 32, 33, 34, 35];
 		var hum = [82, 83, 85, 87, 89];
 		
-		document.getElementById('co').innerText = co[Math.floor(Math.random() * co.length)] + 'ppm';
-		document.getElementById('no2').innerText = no2[Math.floor(Math.random() * no2.length)] + 'ppm';
-		document.getElementById('tmp').innerHTML = tmp[Math.floor(Math.random() * tmp.length)] + '&#8451;';
-		document.getElementById('hum').innerText = hum[Math.floor(Math.random() * hum.length)] + '%';
+		document.getElementById('co').innerText = co[Math.floor(Math.random() * co.length)];
+		document.getElementById('no2').innerText = no2[Math.floor(Math.random() * no2.length)];
+		document.getElementById('tmp').innerText = tmp[Math.floor(Math.random() * tmp.length)];
+		document.getElementById('hum').innerText = hum[Math.floor(Math.random() * hum.length)];
 		
-		if (document.getElementById('co').innerText == '40ppm') {
+		if (document.getElementById('co').innerText == '40') {
 			sendNotification('Your carbon monoxide exposure is too great.')
 		}
 		

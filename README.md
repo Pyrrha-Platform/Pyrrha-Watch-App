@@ -4,9 +4,13 @@ This repository contains the [Prometeo](https://github.com/Code-and-Response/Pro
 
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://join.slack.com/t/code-and-response/shared_invite/enQtNzkyMDUyODg1NDU5LTdkZDhmMjJkMWI1MDk1ODc2YTc2OTEwZTI4MGI3NDI0NmZmNTg0Zjg5NTVmYzNiNTYzNzRiM2JkZjYzOWIwMWE)
 
-## Mockup
+## Mockups
 
-![Prometeo watch app mockup](img/prometeo-watch-mockups.jpg)
+![Prometeo watch app mockup in switcher](img/Watch-001.png)
+
+![Prometeo watch app mockup readings](img/Watch-002.png)
+
+![Prometeo watch app mockup low battery](img/Watch-003.png)
 
 ## Features
 
@@ -26,6 +30,10 @@ The smartphone is responsible for pairing with the watch and the Prometeo device
 
 * Install Tizen Studio
 * Add Samsung SDKs for the watch ([Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/))
+
+## Old mockup
+
+![Prometeo watch app mockup](img/prometeo-watch-mockups.jpg)
 
 ## Contributing
 

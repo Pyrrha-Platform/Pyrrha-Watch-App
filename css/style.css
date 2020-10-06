@@ -1,5 +1,5 @@
-div#main, div#details {
-	background-image: url("../img/fondo_corto.png");
+body {
+	background-color: #000;
 }
 
 div#device-not-found {
@@ -42,7 +42,7 @@ table {
 	width: 100%;
 }
 
-td.key, t.value {
+td.key, td.value {
 	width: 50%
 }
 
@@ -62,6 +62,7 @@ td.color-red {
 	background-color: red;
 }
 
-div#home-content {
-	padding-top: 20%;
+span.reading {
+	font-weight: bold;
 }
+
