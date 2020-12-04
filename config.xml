@@ -6,11 +6,13 @@
     <description>The watch app that accompanies the Prometeo device and smartphone.</description>
     <feature name="http://tizen.org/feature/screen.size.normal"/>
     <icon src="icon.png"/>
-    <license href="https://github.com/Code-and-Response/Prometeo-Watch-App/blob/master/LICENSE">Apache 2</license>
+    <license href="https://github.com/Call-for-Code/Prometeo-Watch-App/blob/master/LICENSE">Apache 2</license>
+    <tizen:metadata key="AccessoryServicesLocation" value="/res/xml/accessoryservices.xml"/>
     <name>Prometeo</name>
+    <tizen:privilege name="http://developer.samsung.com/tizen/privilege/accessoryprotocol"/>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
     <tizen:privilege name="http://tizen.org/privilege/bluetooth"/>
     <tizen:privilege name="http://tizen.org/privilege/notification"/>
     <tizen:profile name="wearable"/>
-    <tizen:setting hwkey-event="enable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
 </widget>
