@@ -1,16 +1,16 @@
-# Prometeo watch app
+# Pyrrha watch app
 
-This repository contains the [Prometeo](https://github.com/Call-for-Code/Prometeo) solution application that targets Samsung watches paired with the [sensor device](https://github.com/Call-for-Code/Prometeo-Firmware) and Samsung [smartphone](https://github.com/Call-for-Code/Prometeo-Mobile-App) carried by the firefighters.
+This repository contains the [Pyrrha](https://github.com/Pyrrha-Platform/Pyrrha) solution application that targets Samsung watches paired with the [sensor device](https://github.com/Pyrrha-Platform/Pyrrha-Firmware) and Samsung [smartphone](https://github.com/Pyrrha-Platform/Pyrrha-Watch-App) carried by the firefighters.
 
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack)
 
 ## Mockups
 
-![Prometeo watch app mockup in switcher](img/Watch-001.png)
+![Pyrrha watch app mockup in switcher](img/Watch-001.png)
 
-![Prometeo watch app mockup readings](img/Watch-002.png)
+![Pyrrha watch app mockup readings](img/Watch-002.png)
 
-![Prometeo watch app mockup low battery](img/Watch-003.png)
+![Pyrrha watch app mockup low battery](img/Watch-003.png)
 
 ## Features
 
@@ -19,7 +19,7 @@ The watch includes a limited subset of the features proposed in the [original mo
 1. Basic home page with time and 4 readings shared from the device via the mobile app
 2. Battery life is not yet shown, as this is not available from the device
 
-The smartphone is responsible for pairing with the watch and the Prometeo device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
+The smartphone is responsible for pairing with the watch and the Pyrrha device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
 
 - [x] Basic landing page
 - [x] Sensors page
@@ -33,11 +33,11 @@ The smartphone is responsible for pairing with the watch and the Prometeo device
 
 ## Original mockup
 
-![Prometeo watch app mockup](img/prometeo-watch-mockups.jpg)
+![Pyrrha watch app mockup](img/prometeo-watch-mockups.jpg)
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting Prometeo pull requests.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting Pyrrha pull requests.
 
 ## License
 
