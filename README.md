@@ -23,8 +23,8 @@ The smartphone is responsible for pairing with the watch and the Pyrrha device. 
 
 - [x] Basic landing page
 - [x] Sensors page
-- [ ] [Bluetooth connectivity to smartphone](https://docs.tizen.org/application/web/guides/connectivity/bluetooth/)
-- [ ] [Vibrations if any sensor has been red for 5 seconds](https://docs.tizen.org/application/web/guides/notification/notification/#creating-simple-notifications)
+- [x] [Bluetooth connectivity to smartphone](https://docs.tizen.org/application/web/guides/connectivity/bluetooth/)
+- [x] [Vibrations if any sensor has been red for 5 seconds](https://docs.tizen.org/application/web/guides/notification/notification/#creating-simple-notifications)
 
 ## Setting up the solution
 
