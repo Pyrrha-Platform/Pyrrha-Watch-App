@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://pyrrhaplatform.com/PyrrhaWatchApp" version="1.0.0" viewmodes="maximized">
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://pyrrha-platform.org/PyrrhaWatchApp" version="1.0.0" viewmodes="maximized">
     <tizen:application id="0Z4pEP3FTf.PyrrhaWatchApp" package="0Z4pEP3FTf" required_version="5.5"/>
     <author href="https://pyrrha-platform.org/" email="krook@us.ibm.com">Daniel Krook</author>
     <content src="index.html"/>

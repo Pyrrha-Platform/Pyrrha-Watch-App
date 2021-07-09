@@ -38,7 +38,7 @@ so that you can make the actual changes. This is where we will start.
 ## Dependencies
 
 More details to come on Pyrrha dependencies. In case of doubt, open an issue in the
-[issue tracker](https://github.com/Call-for-Code/Pyrrha/issues/) or engage on the
+[issue tracker](https://github.com/Pyrrha-Platform/Pyrrha-Watch-App/issues/) or engage on the
 [Pyrrha Slack workspace][].
 
 ## Setting up your local environment
@@ -51,7 +51,7 @@ it's time to create a fork.
 
 ### Step 1: Fork
 
-Fork the project [on GitHub](https://github.com/Call-for-Code/Pyrrha) and clone your fork
+Fork the project [on GitHub](https://github.com/Pyrrha-Platform/Pyrrha-Watch-App) and clone your fork
 locally.
 
 You will need to have [Git Large File Storage](https://help.github.com/en/github/managing-large-files/installing-git-large-file-storage) installed locally.
@@ -59,7 +59,7 @@ You will need to have [Git Large File Storage](https://help.github.com/en/github
 ```text
 $ git clone git@github.com:username/Pyrrha.git
 $ cd Pyrrha
-$ git remote add upstream https://github.com/Call-for-Code/Pyrrha.git
+$ git remote add upstream https://github.com/Pyrrha-Platform/Pyrrha-Watch-App.git
 $ git fetch upstream
 ```
 
@@ -145,7 +145,7 @@ please do proper word-wrap and keep columns shorter than about
 72 characters or so. That way, `git log` will show things
 nicely even when it is indented.
 
-Fixes: https://github.com/Call-for-Code/Pyrrha/issues/1337
+Fixes: https://github.com/Pyrrha-Platform/Pyrrha-Watch-App/issues/1337
 Refs: http://eslint.org/docs/rules/space-in-parens.html
 ```
 
@@ -364,7 +364,7 @@ commit.
 ### Approving a change
 
 Any Pyrrha core Collaborator (any GitHub user with commit rights in the
-`Call-for-Code/Pyrrha` repository) is authorized to approve any other contributor's
+`Pyrrha-Platform/Pyrrha-Watch-App` repository) is authorized to approve any other contributor's
 work. Collaborators are not permitted to approve their own pull requests.
 
 Collaborators indicate that they have reviewed and approve of the changes in
@@ -481,6 +481,6 @@ collaborators may decide it doesn't need to wait. A pull request may well take
 longer to be merged in.
 
 
-[Code of Conduct]: https://github.com/Call-for-Code/Pyrrha/blob/master/CONTRIBUTING.md#code-of-conduct
-[Collaborator Guide]: https://github.com/Call-for-Code/Pyrrha/blob/master/CONTRIBUTING.md
+[Code of Conduct]: https://github.com/Pyrrha-Platform/Pyrrha-Watch-App/blob/master/CONTRIBUTING.md#code-of-conduct
+[Collaborator Guide]: https://github.com/Pyrrha-Platform/Pyrrha-Watch-App/blob/master/CONTRIBUTING.md
 [Pyrrha Slack workspace]: https://callforcode.org/slack

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
 	<application name="Pyrrha">
-		<serviceProfile id="/com/pyrrhaplatform/readings" name="Readings"
+		<serviceProfile id="/org/pyrrha-platform/readings" name="Readings"
 		                role="consumer" version="1.0">
 			<supportedTransports>
 				<transport type="TRANSPORT_BT"/>
