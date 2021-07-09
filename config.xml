@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://prometeoplatform.com/PrometeoWatchApp" version="1.0.0" viewmodes="maximized">
-    <tizen:application id="0Z4pEP3FTf.PrometeoWatchApp" package="0Z4pEP3FTf" required_version="5.5"/>
-    <author href="https://prometeoplatform.com/" email="krook@us.ibm.com">Daniel Krook</author>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://pyrrhaplatform.com/PyrrhaWatchApp" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="0Z4pEP3FTf.PyrrhaWatchApp" package="0Z4pEP3FTf" required_version="5.5"/>
+    <author href="https://pyrrha-platform.org/" email="krook@us.ibm.com">Daniel Krook</author>
     <content src="index.html"/>
-    <description>The watch app that accompanies the Prometeo device and smartphone.</description>
+    <description>The watch app that accompanies the Pyrrha device and smartphone.</description>
     <feature name="http://tizen.org/feature/screen.size.normal"/>
     <icon src="icon.png"/>
-    <license href="https://github.com/Call-for-Code/Prometeo-Watch-App/blob/master/LICENSE">Apache 2</license>
+    <license href="https://github.com/Pyrrha-Platform/Pyrrha-Watch-App/blob/master/LICENSE">Apache 2</license>
     <tizen:metadata key="AccessoryServicesLocation" value="/res/xml/accessoryservices.xml"/>
-    <name>Prometeo</name>
+    <name>Pyrrha</name>
     <tizen:privilege name="http://developer.samsung.com/tizen/privilege/accessoryprotocol"/>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
     <tizen:privilege name="http://tizen.org/privilege/bluetooth"/>

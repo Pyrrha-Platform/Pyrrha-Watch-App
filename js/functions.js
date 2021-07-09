@@ -1,4 +1,4 @@
-// Custom Prometeo JavaScript
+// Custom Pyrrha JavaScript
 
 (function () {
 	"use strict";

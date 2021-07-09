@@ -17,7 +17,7 @@ testMain
 
 # generated files etc
 .tproject
-PrometeoWatchApp.wgt
+PyrrhaWatchApp.wgt
 .sign/
 config.cache
 config.status
