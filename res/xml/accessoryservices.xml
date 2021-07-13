@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <resources>
-	<application name="Prometeo">
-		<serviceProfile id="/com/prometeoplatform/readings" name="Readings"
+	<application name="Pyrrha">
+		<serviceProfile id="/org/pyrrha-platform/readings" name="Readings"
 		                role="consumer" version="1.0">
 			<supportedTransports>
 				<transport type="TRANSPORT_BT"/>

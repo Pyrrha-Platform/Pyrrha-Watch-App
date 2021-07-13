@@ -28,12 +28,12 @@ The smartphone is responsible for pairing with the watch and the Pyrrha device. 
 
 ## Setting up the solution
 
-* Install Tizen Studio
-* Add Samsung SDKs for the watch ([Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/))
+- [Install Tizen Studio](https://developer.samsung.com/galaxy-watch-develop/creating-your-first-app/web-companion/setup-sdk.html)
+- Add Samsung SDKs for the watch ([Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/))
 
-## Original mockup
+## Original mockup based on Pyrrha branding
 
-![Pyrrha watch app mockup](img/prometeo-watch-mockups.jpg)
+![Pyrrha watch app mockup](img/pyrrha-watch-mockups.jpg)
 
 ## Contributing
 
