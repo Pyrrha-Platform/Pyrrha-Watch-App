@@ -54,7 +54,7 @@
 				this.systeminfo = tizen.systeminfo;
 				this.checkBatteryLowState();
 				this.listenBatteryLowState();
-			}			else {
+			} else {
 				console.warn("tizen.systeminfo is not available.");
 			}
 		}
