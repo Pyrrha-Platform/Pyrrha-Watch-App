@@ -51,15 +51,15 @@ td.color, td.color-green, td.color-yellow, td.color-red {
 }
 
 td.color-green {
-	background-color: green;
+	background-color: #24a148;
 }
 
 td.color-yellow {
-	background-color: yellow;
+	background-color: #f1c21b;
 }
 
 td.color-red {
-	background-color: red;
+	background-color: #da1e28;
 }
 
 span.reading {
