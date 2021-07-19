@@ -28,8 +28,17 @@ The smartphone is responsible for pairing with the watch and the Pyrrha device. 
 
 ## Setting up the solution
 
+The application is built as a Tizen Web Application so it uses HTML, JavaScript, and CSS.
+
 - [Install Tizen Studio](https://developer.samsung.com/galaxy-watch-develop/creating-your-first-app/web-companion/setup-sdk.html)
 - Add Samsung SDKs for the watch ([Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/))
+- Install [Samsung Wearable Extension](https://developer.samsung.com/galaxy-watch-develop/extension-api-reference.html)
+- Install [Samsung Certificate Extension](https://developer.samsung.com/galaxy-watch-develop/getting-certificates/install.html)
+
+## Run on watch or simulator
+
+1. Open Tizen Studio and select the workspace where you cloned this repository, for example `$HOME/workspace/PyrrhaWatchApp`.
+2. Right click on the PyrrhaWatchApp project and Run as Tizen Web Application in simulator or on [Watch](https://www.youtube.com/watch?v=BqWjvi9rQuY).
 
 ## Original mockup based on Prometeo branding
 
