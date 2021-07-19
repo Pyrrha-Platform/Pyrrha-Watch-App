@@ -17,18 +17,13 @@ This repository contains the [Pyrrha](https://github.com/Pyrrha-Platform/Pyrrha)
 The watch includes a limited subset of the features proposed in the [original mockup](#original-mockup). It includes:
 
 1. Basic home page with time and 4 readings shared from the device via the mobile app
-2. Battery life is not yet shown, as this is not available from the device
+2. Alerts if one of the readings crosses a threshold
 
 The smartphone is responsible for pairing with the watch and the Pyrrha device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
 
-- [x] Basic landing page
-- [x] Sensors page
-- [x] [Bluetooth connectivity to smartphone](https://docs.tizen.org/application/web/guides/connectivity/bluetooth/)
-- [x] [Vibrations if any sensor has been red for 5 seconds](https://docs.tizen.org/application/web/guides/notification/notification/#creating-simple-notifications)
+The application is built as a Tizen Web Application so it uses HTML, JavaScript, and CSS.
 
 ## Setting up the solution
-
-The application is built as a Tizen Web Application so it uses HTML, JavaScript, and CSS.
 
 - [Install Tizen Studio](https://developer.samsung.com/galaxy-watch-develop/creating-your-first-app/web-companion/setup-sdk.html)
 - Add Samsung SDKs for the watch ([Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/))
