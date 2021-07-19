@@ -50,16 +50,16 @@ td.color, td.color-green, td.color-yellow, td.color-red {
 	width: 10%
 }
 
-td.color-green {
-	background-color: #24a148;
+span.color-green {
+	color: #24a148;
 }
 
-td.color-yellow {
-	background-color: #f1c21b;
+span.color-yellow {
+	color: #f1c21b;
 }
 
-td.color-red {
-	background-color: #da1e28;
+span.color-red {
+	color: #da1e28;
 }
 
 span.reading {
