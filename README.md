@@ -36,7 +36,7 @@ The application is built as a [Tizen Web (Companion) Application](https://develo
 
 1. Open Tizen Studio and select a workspace where you cloned this repository, for example the `workspace` folder in your home directory.
 1. Clone this repository, either into the `workspace` folder or elswhere on your computer. For example, I use the `dev` folder in my home directory to store all my clone repositories, including all the other Pyrrha projects.
-1. In the Project Explorer pane, click "Create new project". Select Template, then Wearable v5.5. Choose Web Application, then TAU Basic. Name the project `Pyrrha-Watch-App` (it can't contain hyphens) and click Finish.
+1. In the Project Explorer pane, click "Create new project". Select Template, then Wearable v5.5. Choose Web Application, then TAU Basic. Name the project `PyrrhaWatchApp` (it can't contain hyphens) and click Finish.
 1. Click File > Import... and select a General - File System. Browse to the folder where you clone this repo. selecting the `Pyrrha-Watch-App` folder and its included files. Click finish and overwrite existing files.
 1. Open the Emulator Manager under the Tools menu and launch the Wearable Circle device. 
 1. Back in Tizen Studio, right click on the `PyrrhaWatchApp` project and "Run as Tizen Web Application 5.5" in simulator.
