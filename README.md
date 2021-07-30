@@ -19,16 +19,16 @@ The application was originally built with Prometeo mockups and designs. The curr
 The watch includes a limited subset of the features proposed in the [original mockup](#original-mockup). It includes:
 
 1. Basic home page with time and 4 readings shared from the device via the mobile app
-2. Alerts if one of the readings crosses a threshold which in turn initiates a vibration
+1. Alerts if one of the readings crosses a threshold which in turn initiates a vibration
 
-The smartphone is responsible for pairing with the watch and the Pyrrha device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
+The smartphone is responsible for pairing with the watch and the sensor device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
 
 The application is built as a [Tizen Web (Companion) Application](https://developer.samsung.com/galaxy-watch-develop/creating-your-first-app/web-companion/setup-sdk.html) so it uses HTML, JavaScript, and CSS.
 
 ## Setting up the development environment
 
 - [Install Tizen Studio](https://developer.tizen.org/development/tizen-studio/download) with the IDE installer. If you're on macOS Big Sur, you may have to [temporarily override security settings](https://support.apple.com/en-us/HT202491) to complete the installation. Take note of the default SDK and Data locations.
-- Open the Package Manager and add Samsung SDKs for the watch. The non-LTE [Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/) and [Galaxy Watch 3 Bluetooth](https://www.samsung.com/us/watches/galaxy-watch3/) are the versions used for testing.
+- Open the Package Manager and add Samsung SDKs for the watch. The non-LTE [Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/) and [Galaxy Watch 3 Bluetooth](https://www.samsung.com/us/watches/galaxy-watch3/) are the versions used for testing. You may need to sign up for a Samsung Developer Account.
   - In the Main SDK tab, install the [5.5 Wearable](https://developer.samsung.com/galaxy-watch-develop/creating-your-first-app/web-companion/setup-sdk.html) package which will install an emulator, certificates, and web/native development environments.
   - In the Extension SDK tab, install the [Samsung Wearable Extension](https://developer.samsung.com/galaxy-watch-develop/extension-api-reference.html) and [Samsung Certificate Extension](https://developer.samsung.com/galaxy-watch-develop/getting-certificates/install.html). If you don't see them, click the gear icon and scroll down and activate the respective repositories. Then return to the Extension SDK tab to install.
 
