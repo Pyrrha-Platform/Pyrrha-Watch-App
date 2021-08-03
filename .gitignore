@@ -5,7 +5,6 @@ testMain
 # vim
 *.swp
 # Eclipse
-*.project
 *.cproject
 .classpath
 *.sublime-*
@@ -16,7 +15,6 @@ testMain
 *.metaData
 
 # generated files etc
-.tproject
 PyrrhaWatchApp.wgt
 .sign/
 config.cache
@@ -71,7 +69,6 @@ config.log
 
 # Eclipse project files. Not needed as they are generated in two clicks if needed.
 .settings
-.project
 .cproject
 
 /nbproject

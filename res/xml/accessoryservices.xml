@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
 	<application name="Pyrrha">
-		<serviceProfile id="/org/pyrrha-platform/readings" name="Readings" role="consumer" version="1.0">
+		<serviceProfile 
+			id="/org/pyrrha-platform/readings" 
+			name="Readings" 
+			role="consumer" 
+			version="1.0"
+            serviceLimit="ONE_PEERAGENT"
+            serviceTimeout="30">
 			<supportedTransports>
 				<transport type="TRANSPORT_BT"/>
 				<transport type="TRANSPORT_WIFI"/>
 			</supportedTransports>
-			<serviceChannel id="110" dataRate="low" priority="low" reliability="enable">
+			<serviceChannel 
+				id="110" 
+				dataRate="low" 
+				priority="low" 
+				reliability="enable">
 			</serviceChannel>
 		</serviceProfile>
 	</application>
