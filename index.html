@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width,user-scalable=no">
+  <head>
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
     <title>Pyrrha</title>
-    <link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
-    <link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css" />
+    <link
+      rel="stylesheet"
+      media="all and (-tizen-geometric-shape: circle)"
+      href="lib/tau/wearable/theme/default/tau.circle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="ui-page" id="details">
-        <div class="ui-content" id="device-details">
-            <!--
+      <div class="ui-content" id="device-details">
+        <!--
             <a href="#" onclick="connect();" id="connect">Connect</a>
             <a href="#" onclick="fetch();" id="fetch">Fetch</a>
             <br>
             -->
-            <span id="device-details"><a href="#details" id="device-clock">00:00</a></span>
-            <table>
-                <tr>
-                    <td class="key">CO</td>
-                    <td class="value"><span id="display-co" class="reading"></span> ppm</td>
-                </tr>
-                <tr>
-                    <td class="key">NO<sub>2</sub>
-                    </td>
-                    <td class="value"><span id="display-no2" class="reading"></span> ppm</td>
-                </tr>
-                <tr>
-                    <td class="key">Temperature</td>
-                    <td class="value"><span id="display-tmp" class="reading"></span> &#8451;</td>
-                </tr>
-                <tr>
-                    <td class="key">Humidity</td>
-                    <td class="value"><span id="display-hum" class="reading"></span> %</td>
-                </tr>
-            </table>
-        </div>
-        <div id="toast" class="ui-popup ui-popup-toast">
-            <div id="toast-content" class="ui-popup-content"></div>
-        </div>
+        <span id="device-details"
+          ><a href="#details" id="device-clock">00:00</a></span
+        >
+        <table>
+          <tr>
+            <td class="key">CO</td>
+            <td class="value">
+              <span id="display-co" class="reading"></span> ppm
+            </td>
+          </tr>
+          <tr>
+            <td class="key">NO<sub>2</sub></td>
+            <td class="value">
+              <span id="display-no2" class="reading"></span> ppm
+            </td>
+          </tr>
+          <tr>
+            <td class="key">Temperature</td>
+            <td class="value">
+              <span id="display-tmp" class="reading"></span> &#8451;
+            </td>
+          </tr>
+          <tr>
+            <td class="key">Humidity</td>
+            <td class="value">
+              <span id="display-hum" class="reading"></span> %
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="toast" class="ui-popup ui-popup-toast">
+        <div id="toast-content" class="ui-popup-content"></div>
+      </div>
     </div>
     <script src="lib/tau/wearable/js/tau.min.js"></script>
     <script src="js/low-battery-check.js"></script>
@@ -49,6 +61,5 @@
     <script src="js/connect.js"></script>
     <script src="js/control.js"></script>
     <script src="js/pyrrha.js"></script>
-</body>
-
+  </body>
 </html>
