@@ -1,4 +1,9 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
 body {
+	margin: 0px auto;
 	background-color: #000;
 }
 
@@ -21,6 +26,10 @@ a#device-clock {
 
 div#device-message, div#device-details, td {
 	color: #fff;
+	text-align: center;
+}
+
+div#toast, div#toast-content {
 	text-align: center;
 }
 
@@ -62,7 +71,7 @@ span.color-red {
 	color: #da1e28;
 }
 
-span.reading {
+span.display {
 	font-weight: bold;
 }
 
