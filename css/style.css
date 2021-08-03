@@ -1,77 +1,84 @@
 * {
-    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+  font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
 }
 
 body {
-	margin: 0px auto;
-	background-color: #000;
+  margin: 0px auto;
+  background-color: #000;
 }
 
 div#device-not-found {
-	display: none;
+  display: none;
 }
 
 h2#title {
-	color: #333;
+  color: #333;
 }
 
 a#home-clock {
-	font-size: 200%;
-	color: #fff;
+  font-size: 200%;
+  color: #fff;
 }
 
 a#device-clock {
-	color: #fff;
+  color: #fff;
 }
 
-div#device-message, div#device-details, td {
-	color: #fff;
-	text-align: center;
+div#device-message,
+div#device-details,
+td {
+  color: #fff;
+  text-align: center;
 }
 
-div#toast, div#toast-content {
-	text-align: center;
+div#toast,
+div#toast-content {
+  text-align: center;
 }
 
 td.key {
-	text-align: right;
+  text-align: right;
 }
 
 td.value {
-	text-align: left;
+  text-align: left;
 }
 
-table, td {
-	/* border: 1px solid #000; */
-	padding: 0 2% 0 2%;
-	font-size: 80%
+table,
+td {
+  /* border: 1px solid #000; */
+  padding: 0 2% 0 2%;
+  font-size: 80%;
 }
 
 table {
-	width: 100%;
+  width: 100%;
 }
 
-td.key, td.value {
-	width: 50%
+td.key,
+td.value {
+  width: 50%;
 }
 
-td.color, td.color-green, td.color-yellow, td.color-red {
-	width: 10%
+td.color,
+td.color-green,
+td.color-yellow,
+td.color-red {
+  width: 10%;
 }
 
 span.color-green {
-	color: #24a148;
+  color: #24a148;
 }
 
 span.color-yellow {
-	color: #f1c21b;
+  color: #f1c21b;
 }
 
 span.color-red {
-	color: #da1e28;
+  color: #da1e28;
 }
 
 span.display {
-	font-weight: bold;
+  font-weight: bold;
 }
-
