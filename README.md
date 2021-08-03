@@ -29,7 +29,7 @@ The application is built as a [Tizen Web (Companion) Application](https://develo
 
 - [Install Tizen Studio](https://developer.tizen.org/development/tizen-studio/download) with the IDE installer. If you're on macOS Big Sur, you may have to [temporarily override security settings](https://support.apple.com/en-us/HT202491) to complete the installation. Take note of the default SDK and Data locations.
 - Open the Package Manager and add Samsung SDKs for the watch. The non-LTE [Galaxy Watch 46mm Bluetooth](https://www.samsung.com/es/wearables/galaxy-watch-r800/) and [Galaxy Watch 3 Bluetooth](https://www.samsung.com/us/watches/galaxy-watch3/) are the versions used for testing. You may need to sign up for a Samsung Developer Account.
-  - In the Main SDK tab, install the [5.5 Wearable](https://developer.samsung.com/galaxy-watch-develop/creating-your-first-app/web-companion/setup-sdk.html) package which will install an emulator, certificates, and web/native development environments.
+  - In the Main SDK tab, install the [5.5 Wearable, 4.0 Wearable, and 3.0 Wearable](https://developer.samsung.com/galaxy-watch-develop/creating-your-first-app/web-companion/setup-sdk.html) packages which will install an emulator, certificates, and web/native development environments.
   - In the Extension SDK tab, install the [Samsung Wearable Extension](https://developer.samsung.com/galaxy-watch-develop/extension-api-reference.html) and [Samsung Certificate Extension](https://developer.samsung.com/galaxy-watch-develop/getting-certificates/install.html). If you don't see them, click the gear icon and scroll down and activate the respective repositories. Then return to the Extension SDK tab to install.
 
 ## Run on watch or simulator
@@ -38,14 +38,14 @@ The application is built as a [Tizen Web (Companion) Application](https://develo
 1. Clone this repository, either into the `workspace` folder or elswhere on your computer. For example, I use the `dev` folder in my home directory to store all my clone repositories, including all the other Pyrrha projects.
 1. In the Project Explorer pane, click "Create new project". Select Template, then Wearable v3.0. Choose Web Application, then TAU Basic. Name the project `PyrrhaWatchApp` (it can't contain hyphens) and click Finish.
 1. Click File > Import... and select a General - File System. Browse to the folder where you clone this repo. selecting the `Pyrrha-Watch-App` folder and its included files. Click finish and overwrite existing files.
-1. Open the Emulator Manager under the Tools menu and launch the Wearable Circle device. 
+1. Open the Emulator Manager under the Tools menu and launch the Wearable Circle device.
 1. Back in Tizen Studio, right click on the `PyrrhaWatchApp` project and "Run as Tizen Web Application 3.0" in simulator.
 1. The watch will begin running the app and generating random data to simulate how it works.
 1. If it doesn't run, you can click the bottom right watch button and select the app from the list to launch.
 
 ## Running on a physical watch
 
-- In order to run the app on a physical device, you'll need to ensure it's built and signed with the Samsung Certificate Extension. 
+- In order to run the app on a physical device, you'll need to ensure it's built and signed with the Samsung Certificate Extension.
 - You'll need to create a connection to the physical watch over WiFi and set it up in the Device Manager. [Watch this video](https://www.youtube.com/watch?v=BqWjvi9rQuY) to learn more. There may be additional steps required depending on your device or system.
 
 ## Continue work and integrate with the Android mobile app
