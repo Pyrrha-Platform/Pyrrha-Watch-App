@@ -15,10 +15,10 @@ contribute:
 1. By opening the issue for discussion: For instance, if you believe that you
    have uncovered a bug in Pyrrha, creating a new issue in the `Pyrrha-Platform/Pyrrha-Watch-App`
    issue tracker is the way to report it.
-2. By helping to triage the issue: This can be done either by providing
+1. By helping to triage the issue: This can be done either by providing
    supporting details (a test case that demonstrates a bug), or providing
    suggestions on how to address the issue.
-3. By helping to resolve the issue: Typically this is done either in the form
+1. By helping to resolve the issue: Typically this is done either in the form
    of demonstrating that the issue reported is not a problem after all, or more
    often, by opening a Pull Request that changes some bit of something in
    `Pyrrha-Platform/Pyrrha-Watch-App` in a concrete and reviewable manner.

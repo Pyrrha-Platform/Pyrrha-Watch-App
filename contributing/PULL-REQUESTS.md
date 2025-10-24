@@ -26,7 +26,7 @@ so that you can make the actual changes. This is where we will start.
   - [Respect the minimum wait time for comments](#respect-the-minimum-wait-time-for-comments)
   - [Abandoned or stalled pull requests](#abandoned-or-stalled-pull-requests)
   - [Approving a change](#approving-a-change)
-  - [Accept that there are different opinions about what belongs in Pyrrha](#accept-that-there-are-different-opinions-about-what-belongs-in-Pyrrha)
+  - [Accept that there are different opinions about what belongs in Pyrrha](#accept-that-there-are-different-opinions-about-what-belongs-in-pyrrha)
   - [Performance is not everything](#performance-is-not-everything)
   - [Continuous integration testing](#continuous-integration-testing)
 - [Notes](#notes)
@@ -56,18 +56,18 @@ locally.
 
 You will need to have [Git Large File Storage](https://help.github.com/en/github/managing-large-files/installing-git-large-file-storage) installed locally.
 
-```text
-$ git clone git@github.com:username/Pyrrha.git
-$ cd Pyrrha
-$ git remote add upstream https://github.com/Pyrrha-Platform/Pyrrha-Watch-App.git
-$ git fetch upstream
+```sh
+git clone git@github.com:username/Pyrrha.git
+cd Pyrrha
+git remote add upstream https://github.com/Pyrrha-Platform/Pyrrha-Watch-App.git
+git fetch upstream
 ```
 
 It is recommended to configure `git` so that it knows who you are:
 
-```text
-$ git config user.name "J. Random User"
-$ git config user.email "j.random.user@example.com"
+```sh
+git config user.name "J. Random User"
+git config user.email "j.random.user@example.com"
 ```
 
 You can use any name/email address you prefer here. We only use the
@@ -80,8 +80,8 @@ As a best practice to keep your development environment as organized as
 possible, create local branches to work within. These should also be created
 directly off of the `master` branch.
 
-```text
-$ git checkout -b my-branch -t upstream/master
+```sh
+git checkout -b my-branch -t upstream/master
 ```
 
 ## The process of making changes
@@ -97,9 +97,9 @@ as possible within individual commits. There is no limit to the number of
 commits any single pull request may have, and many contributors find it easier
 to review changes that are split across multiple commits.
 
-```text
-$ git add my/changed/files
-$ git commit
+```sh
+git add my/changed/files
+git commit
 ```
 
 Note that multiple commits often get squashed when they are landed (see the
@@ -161,9 +161,9 @@ As a best practice, once you have committed your changes, it is a good idea
 to use `git rebase` (not `git merge`) to synchronize your work with the main
 repository.
 
-```text
-$ git fetch upstream
-$ git rebase upstream/master
+```sh
+git fetch upstream
+git rebase upstream/master
 ```
 
 This ensures that your working branch has the latest changes from
@@ -179,8 +179,8 @@ Once you are sure your commits are ready to go, with passing tests and linting,
 begin the process of opening a pull request by pushing your working branch to
 your fork on GitHub.
 
-```text
-$ git push origin my-branch
+```sh
+git push origin my-branch
 ```
 
 ### Step 8: Opening the pull request
@@ -205,19 +205,19 @@ To make changes to an existing pull request, make the changes to your local
 branch, add a new commit with those changes, and push those to your fork.
 GitHub will automatically update the pull request.
 
-```text
-$ git add my/changed/files
-$ git commit
-$ git push origin my-branch
+```sh
+git add my/changed/files
+git commit
+git push origin my-branch
 ```
 
 It is also frequently necessary to synchronize your pull request with other
 changes that have landed in `master` by using `git rebase`:
 
-```text
-$ git fetch --all
-$ git rebase origin/master
-$ git push --force-with-lease origin my-branch
+```sh
+git fetch --all
+git rebase origin/master
+git push --force-with-lease origin my-branch
 ```
 
 **Important:** The `git push --force-with-lease` command is one of the few ways
@@ -228,10 +228,10 @@ risks. If in doubt, you can always ask for guidance in the pull request or on th
 If you happen to make a mistake in any of your commits, do not worry. You can
 amend the last commit (for example if you want to change the commit log).
 
-```text
-$ git add any/changed/files
-$ git commit --amend
-$ git push --force-with-lease origin my-branch
+```sh
+git add any/changed/files
+git commit --amend
+git push --force-with-lease origin my-branch
 ```
 
 There are a number of more advanced mechanisms for managing commits using
@@ -295,7 +295,7 @@ does not land, the submitters should come away from the experience feeling like
 their effort was not wasted or unappreciated. Every pull request from a new
 contributor is an opportunity to grow the community.
 
-### Review a bit at a time.
+### Review a bit at a time
 
 Do not overwhelm new contributors.
 
@@ -358,7 +358,7 @@ check with the contributor to see if they intend to continue the work before
 checking if they would mind if you took it over (especially if it just has
 nits left). When doing so, it is courteous to give the original contributor
 credit for the work they started (either by preserving their name and email
-address in the commit log, or by using an `Author: ` meta-data tag in the
+address in the commit log, or by using an `Author:` meta-data tag in the
 commit.
 
 ### Approving a change
@@ -481,5 +481,4 @@ collaborators may decide it doesn't need to wait. A pull request may well take
 longer to be merged in.
 
 [code of conduct]: https://github.com/Pyrrha-Platform/Pyrrha-Watch-App/blob/master/CONTRIBUTING.md#code-of-conduct
-[collaborator guide]: https://github.com/Pyrrha-Platform/Pyrrha-Watch-App/blob/master/CONTRIBUTING.md
 [pyrrha slack workspace]: https://callforcode.org/slack
