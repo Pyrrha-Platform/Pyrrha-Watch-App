@@ -21,7 +21,7 @@ The watch includes a limited subset of the features proposed in the [original mo
 1. Basic home page with time and 4 readings shared from the device via the mobile app
 1. Alerts if one of the readings crosses a threshold which in turn initiates a vibration
 
-The smartphone is responsible for pairing with the watch and the sensor device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
+The smartphone is responsible for pairing with the watch and the device. The watch receives pushed updates over Bluetooth from the smartphone every second. If any indicator has been red for 5 seconds, it vibrates the watch.
 
 The application is built as a [Tizen Web (Companion) Application](https://developer.samsung.com/galaxy-watch-develop/creating-your-first-app/web-companion/setup-sdk.html) so it uses HTML, JavaScript, and CSS.
 
