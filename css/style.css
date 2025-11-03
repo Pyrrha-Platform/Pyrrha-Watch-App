@@ -1,84 +1,333 @@
+/**
+ * Pyrrha Watch App Styles - Galaxy Watch 3 Edition
+ * Optimized for Super AMOLED circular display with rotating bezel support
+ */
+
+/* Root Variables for Galaxy Watch 3 */
+:root {
+  --primary-bg: #000000;
+  --primary-text: #ffffff;
+  --secondary-text: #cccccc;
+  --accent-blue: #0f62fe;
+  --success-green: #24a148;
+  --warning-yellow: #f1c21b;
+  --danger-red: #da1e28;
+  --border-subtle: #393939;
+  --border-strong: #6f6f6f;
+  
+  /* Galaxy Watch 3 specific dimensions */
+  --watch-diameter: 360px;
+  --safe-area: 320px;
+  --bezel-width: 20px;
+  
+  /* Typography scale */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+}
+
+/* Modern font stack optimized for small screens */
 * {
-  font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+  font-family: 'SamsungOne', -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
 }
 
+/* Body optimized for circular display */
 body {
-  margin: 0px auto;
-  background-color: #000;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: var(--font-size-base);
+  line-height: 1.4;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-div#device-not-found {
-  display: none;
+/* Circular layout container */
+.ui-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--primary-bg) 0%, rgba(0,0,0,0.9) 100%);
 }
 
-h2#title {
-  color: #333;
+/* Content area with safe circular padding */
+.ui-content {
+  width: var(--safe-area);
+  height: var(--safe-area);
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--bezel-width);
+  border-radius: 50%;
+  position: relative;
 }
 
-a#home-clock {
-  font-size: 200%;
-  color: #fff;
+/* Clock display */
+#device-clock {
+  color: var(--primary-text);
+  font-size: var(--font-size-2xl);
+  font-weight: 300;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
 }
 
-a#device-clock {
-  color: #fff;
+#device-clock:hover,
+#device-clock:focus {
+  color: var(--accent-blue);
+  transform: scale(1.05);
 }
 
-div#device-message,
-div#device-details,
+/* Sensor data table */
+table {
+  width: 100%;
+  max-width: 280px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-subtle);
+}
+
 td {
-  color: #fff;
-  text-align: center;
+  padding: 0.5rem 0.75rem;
+  color: var(--primary-text);
+  font-size: var(--font-size-sm);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-div#toast,
-div#toast-content {
-  text-align: center;
+td:last-child {
+  border-bottom: none;
 }
 
 td.key {
   text-align: right;
+  font-weight: 500;
+  color: var(--secondary-text);
+  width: 45%;
+  padding-right: 0.5rem;
 }
 
 td.value {
   text-align: left;
+  font-weight: 600;
+  width: 55%;
+  padding-left: 0.5rem;
 }
 
-table,
-td {
-  /* border: 1px solid #000; */
-  padding: 0 2% 0 2%;
-  font-size: 80%;
+/* Sensor reading styles with animations */
+.reading {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px currentColor;
 }
 
-table {
-  width: 100%;
+.color-green {
+  color: var(--success-green);
+  animation: pulse-green 2s infinite;
 }
 
-td.key,
-td.value {
-  width: 50%;
+.color-yellow {
+  color: var(--warning-yellow);
+  animation: pulse-yellow 1.5s infinite;
 }
 
-td.color,
-td.color-green,
-td.color-yellow,
-td.color-red {
-  width: 10%;
+.color-red {
+  color: var(--danger-red);
+  animation: pulse-red 1s infinite;
 }
 
-span.color-green {
-  color: #24a148;
+/* Pulse animations for sensor states */
+@keyframes pulse-green {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
 }
 
-span.color-yellow {
-  color: #f1c21b;
+@keyframes pulse-yellow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.02); }
 }
 
-span.color-red {
-  color: #da1e28;
+@keyframes pulse-red {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.95; transform: scale(1.05); }
 }
 
-span.display {
-  font-weight: bold;
+/* Toast notification system */
+.ui-popup-toast {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  max-width: 280px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ui-popup-content {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-radius: 20px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: 1.3;
+  word-wrap: break-word;
+}
+
+/* Toast message types */
+.toast-info {
+  background: rgba(15, 98, 254, 0.9);
+  border: 1px solid var(--accent-blue);
+  color: white;
+}
+
+.toast-success {
+  background: rgba(36, 161, 72, 0.9);
+  border: 1px solid var(--success-green);
+  color: white;
+}
+
+.toast-warning {
+  background: rgba(241, 194, 27, 0.9);
+  border: 1px solid var(--warning-yellow);
+  color: black;
+}
+
+.toast-error {
+  background: rgba(218, 30, 40, 0.9);
+  border: 1px solid var(--danger-red);
+  color: white;
+}
+
+/* Hidden elements */
+#device-not-found {
+  display: none;
+}
+
+/* Accessibility improvements */
+.ui-page:focus-within {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-text: #ffffff;
+    --secondary-text: #ffffff;
+    --border-subtle: #ffffff;
+    --border-strong: #ffffff;
+  }
+  
+  table {
+    border: 2px solid var(--border-strong);
+  }
+  
+  td {
+    border-bottom: 1px solid var(--border-strong);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark mode support (already optimized for AMOLED) */
+@media (prefers-color-scheme: dark) {
+  /* Already optimized for dark/AMOLED displays */
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) {
+  .ui-content {
+    padding: calc(var(--bezel-width) * 0.8);
+  }
+  
+  table {
+    max-width: 300px;
+  }
+}
+
+/* Touch interaction improvements for rotating bezel */
+.rotary-focus {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid var(--accent-blue);
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Connection status indicator */
+.connection-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--danger-red);
+  transition: background-color 0.3s ease;
+}
+
+.connection-status.connected {
+  background: var(--success-green);
+  animation: pulse-green 2s infinite;
+}
+
+.connection-status.connecting {
+  background: var(--warning-yellow);
+  animation: pulse-yellow 1s infinite;
 }
