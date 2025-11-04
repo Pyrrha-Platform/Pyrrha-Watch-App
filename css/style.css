@@ -14,12 +14,12 @@
   --danger-red: #da1e28;
   --border-subtle: #393939;
   --border-strong: #6f6f6f;
-  
+
   /* Galaxy Watch 3 specific dimensions */
   --watch-diameter: 360px;
   --safe-area: 320px;
   --bezel-width: 20px;
-  
+
   /* Typography scale */
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -32,7 +32,14 @@
 
 /* Modern font stack optimized for small screens */
 * {
-  font-family: 'SamsungOne', -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-family:
+    'SamsungOne',
+    -apple-system,
+    'Segoe UI',
+    'Roboto',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
   box-sizing: border-box;
 }
 
@@ -61,7 +68,11 @@ body {
   justify-content: center;
   position: relative;
   border-radius: 50%;
-  background: radial-gradient(circle, var(--primary-bg) 0%, rgba(0,0,0,0.9) 100%);
+  background: radial-gradient(
+    circle,
+    var(--primary-bg) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
 }
 
 /* Content area with safe circular padding */
@@ -160,18 +171,37 @@ td.value {
 
 /* Pulse animations for sensor states */
 @keyframes pulse-green {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 @keyframes pulse-yellow {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.9; transform: scale(1.02); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
 }
 
 @keyframes pulse-red {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.95; transform: scale(1.05); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.05);
+  }
 }
 
 /* Toast notification system */
@@ -241,11 +271,11 @@ td.value {
     --border-subtle: #ffffff;
     --border-strong: #ffffff;
   }
-  
+
   table {
     border: 2px solid var(--border-strong);
   }
-  
+
   td {
     border-bottom: 1px solid var(--border-strong);
   }
@@ -272,7 +302,7 @@ td.value {
   .ui-content {
     padding: calc(var(--bezel-width) * 0.8);
   }
-  
+
   table {
     max-width: 300px;
   }
@@ -306,8 +336,12 @@ td.value {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Connection status indicator */
