@@ -37,6 +37,7 @@ config.log
 *.bak
 *.apk
 *.class
+/node_modules
 
 # Windows specific generated files
 *.exp
