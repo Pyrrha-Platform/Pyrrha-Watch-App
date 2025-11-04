@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://pyrrha-platform.org/PyrrhaWatchApp" version="1.0.0" viewmodes="maximized">
-    <tizen:application id="0Z4pEP3FTf.PyrrhaWatchApp" package="0Z4pEP3FTf" required_version="3.0"/>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://pyrrha-platform.org/PyrrhaWatchApp" version="2.0.0" viewmodes="maximized">
+    <tizen:application id="0Z4pEP3FTf.PyrrhaWatchApp" package="0Z4pEP3FTf" required_version="5.5"/>
     <author href="https://pyrrha-platform.org/" email="krook@us.ibm.com">Daniel Krook</author>
     <content src="index.html"/>
     <description>The watch app that accompanies the Pyrrha device and smartphone.</description>
     <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <feature name="http://tizen.org/feature/screen.shape.circle"/>
+    <feature name="http://tizen.org/feature/input.rotating_bezel"/>
     <icon src="pyrrha-watch-icon.png"/>
     <license href="https://github.com/Pyrrha-Platform/Pyrrha-Watch-App/blob/master/LICENSE">Apache 2</license>
     <tizen:metadata key="AccessoryServicesLocation" value="/res/xml/accessoryservices.xml"/>
@@ -15,6 +17,8 @@
     <tizen:privilege name="http://tizen.org/privilege/bluetooth"/>
     <tizen:privilege name="http://tizen.org/privilege/notification"/>
     <tizen:privilege name="http://tizen.org/privilege/power"/>
+    <tizen:privilege name="http://tizen.org/privilege/alarm"/>
+    <tizen:privilege name="http://tizen.org/privilege/healthinfo"/>
     <tizen:profile name="wearable"/>
-    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+    <tizen:setting background-support="enable" encryption="disable" hwkey-event="enable" screen-orientation="portrait" context-menu="enable"/>
 </widget>

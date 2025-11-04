@@ -1,56 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width,user-scalable=no" />
-    <title>Pyrrha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Pyrrha firefighter safety monitoring for Galaxy Watch 3">
+    <meta name="application-name" content="Pyrrha">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <title>Pyrrha Safety Monitor</title>
+    
+    <!-- Tizen TAU Framework - Wearable optimized -->
     <link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css" />
-    <link
-      rel="stylesheet"
-      media="all and (-tizen-geometric-shape: circle)"
-      href="lib/tau/wearable/theme/default/tau.circle.min.css"
-    />
+    <link rel="stylesheet" 
+          media="all and (-tizen-geometric-shape: circle)"
+          href="lib/tau/wearable/theme/default/tau.circle.min.css" />
+    
+    <!-- Custom styles optimized for Galaxy Watch 3 -->
     <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="lib/tau/wearable/js/tau.min.js" as="script">
+    <link rel="preload" href="js/constants.js" as="script">
+    <link rel="preload" href="js/connect.js" as="script">
+    <link rel="preload" href="js/pyrrha.js" as="script">
   </head>
 
   <body>
-    <div class="ui-page" id="details">
+    <div class="ui-page" id="details" role="main" aria-label="Pyrrha Safety Monitor">
+      <!-- Connection status indicator -->
+      <div class="connection-status" id="connection-status" 
+           aria-label="Mobile app connection status" 
+           title="Mobile app connection status"></div>
+      
       <div class="ui-content" id="device-details">
-        <!--
-            <a href="#" onclick="connect();" id="connect">Connect</a>
-            <a href="#" onclick="fetch();" id="fetch">Fetch</a>
-            <br>
-            -->
-        <span id="device-details"
-          ><a href="#details" id="device-clock">00:00</a></span
-        >
-        <table>
-          <tr>
-            <td class="key">CO</td>
-            <td class="value">
-              <span id="display-co" class="reading"></span> ppm
-            </td>
-          </tr>
-          <tr>
-            <td class="key">NO<sub>2</sub></td>
-            <td class="value">
-              <span id="display-no2" class="reading"></span> ppm
-            </td>
-          </tr>
-          <tr>
-            <td class="key">Temperature</td>
-            <td class="value">
-              <span id="display-tmp" class="reading"></span> &#8451;
-            </td>
-          </tr>
-          <tr>
-            <td class="key">Humidity</td>
-            <td class="value">
-              <span id="display-hum" class="reading"></span> %
-            </td>
-          </tr>
+        <!-- Hidden connect/disconnect controls for testing -->
+        <div style="display: none;">
+          <button onclick="window.PyrrhaMobileConnection && window.PyrrhaMobileConnection.connect()" 
+                  id="connect" aria-label="Connect to mobile app">Connect</button>
+          <button onclick="window.PyrrhaMobileConnection && window.PyrrhaMobileConnection.requestSensorData()" 
+                  id="fetch" aria-label="Request sensor data">Fetch</button>
+        </div>
+        
+        <!-- Main clock display -->
+        <div id="device-clock-container">
+          <a href="#details" id="device-clock" role="button" 
+             aria-label="Current time" tabindex="0">00:00AM</a>
+        </div>
+        
+        <!-- Sensor readings table -->
+        <table role="table" aria-label="Environmental sensor readings">
+          <tbody>
+            <tr role="row">
+              <td class="key" role="rowheader">CO</td>
+              <td class="value" role="cell">
+                <span id="display-co" class="reading" aria-label="Carbon monoxide level">--</span>
+                <span aria-hidden="true"> ppm</span>
+              </td>
+            </tr>
+            <tr role="row">
+              <td class="key" role="rowheader">NO<sub>2</sub></td>
+              <td class="value" role="cell">
+                <span id="display-no2" class="reading" aria-label="Nitrogen dioxide level">--</span>
+                <span aria-hidden="true"> ppm</span>
+              </td>
+            </tr>
+            <tr role="row">
+              <td class="key" role="rowheader">Temperature</td>
+              <td class="value" role="cell">
+                <span id="display-tmp" class="reading" aria-label="Temperature">--</span>
+                <span aria-hidden="true"> &#8451;</span>
+              </td>
+            </tr>
+            <tr role="row">
+              <td class="key" role="rowheader">Humidity</td>
+              <td class="value" role="cell">
+                <span id="display-hum" class="reading" aria-label="Humidity level">--</span>
+                <span aria-hidden="true"> %</span>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
-      <div id="toast" class="ui-popup ui-popup-toast">
+      
+      <!-- Enhanced toast notification system -->
+      <div id="toast" class="ui-popup ui-popup-toast" role="alert" aria-live="assertive">
         <div id="toast-content" class="ui-popup-content"></div>
       </div>
     </div>

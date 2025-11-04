@@ -1,0 +1,27 @@
+{
+  "name": "pyrrha-watch-app",
+  "version": "1.0.0",
+  "description": "[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/static/v1?label=Slack&message=%23prometeo-pyrrha&color=blue)](https://callforcode.org/slack)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pyrrha-Platform/Pyrrha-Watch-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Pyrrha-Platform/Pyrrha-Watch-App/issues"
+  },
+  "homepage": "https://github.com/Pyrrha-Platform/Pyrrha-Watch-App#readme",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
